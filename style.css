@@ -42,7 +42,8 @@
   list-style-type: square;
 }
 .Lista1 li {
-  margin: 10px 0; 
+  margin: 10px 0;
+  background-color: lightyellow; 
 }
 .Idezet::before {
   content: '”';
