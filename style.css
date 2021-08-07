@@ -1,107 +1,114 @@
-.Container {
-  width: 1440px;
-  margin: auto;
+/* Gallery app - Green Fox MyFirstApp Coding Camp */
+
+body {
+   background-image: url("./graphics/bkgd13.jpg");
 }
-.CVFej {
-  height: 480px;
-  background:  url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png") no-repeat center;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 50px;
+.kontener {
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   justify-content: space-between;
 }
-.Fejsor {
-  margin: 0;
-  font-family: 'Abril Fatface', cursive;
-  font-style: normal;
-  font-weight: normal;
+#kepkontener {
+   box-shadow: 0px 8px 10px 0px gray;
+   width: 1000px;
+   height: 550px;
+   margin-top: 30px;
+   margin-bottom: 20px;
 }
-#Fejsor1 {
-  font-size: 44px;
-  position: absolute;
-  bottom: 135px;
-  left: 300px;  
+.nagygomb {
+   background-color: #d2d2d2;
+   height: 550px;
+   width: 70px;
+   border-style: none;
 }
-#Fejsor2 {
-  font-size: 85px;
-  position: absolute;
-  bottom: 40px;
-  left: 300px;
+.nagygomb:hover {
+   background-color: #b8b8b8;
 }
-.Szoveg {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  margin: 20px 300px;
-  color:#222;
+#kephatter {
+   background-color: #d6d6d6;
+   background-image: url("./graphics/bkgd04.jpg");
+   width : 860px;
+   height: 550px;
+   position: relative;
 }
-.Vastag {
-  font-weight: bold;
+#keptarolo {
+   max-width: 860 px;
+   height: 550px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;   
 }
-.Lista1 {
-  list-style-type: square;
+#kepszoveg {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   box-sizing: border-box;
+   width: 860px;
+   padding: 0 20px;
+   background: rgba(96, 96, 96, 0.5);
+   color: white; 
+   opacity: 0.7;
 }
-.Lista1 li {
-  margin: 10px 0;
-  background-color: lightyellow; 
+#kepszoveg:hover {
+   color: cyan;
+   opacity: 1;
 }
-.Idezet::before {
-  content: '”';
-  font-size: 120px;
-  transform: scale(-1, -1)  translate(60%, 50%) ;
-  position: absolute;
-  top: 1px;
+#kepszoveg h4 {
+   margin: 8px 0;
+   font-family: 'Patua One', cursive;
+   font-size: 24px;
+   font-weight: 500;
+   letter-spacing: 5px;
 }
-.Idezet {
-  background-color: #444;
-  color: white;
-  margin: 50px 250px;
-  /* height: 160px; */
-  font-family: 'Abril Fatface', cursive;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 100;
-  padding: 5px 50px;
-  display: flex;
-  align-items: center;
-  position: relative;
+#kepszoveg p {
+   margin: 8px 0;
+   font-family: 'Baloo Tamma 2', cursive;
+   font-size: 14px;
+   font-style: italic;
 }
-.Notable {
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 20px 300px;
-  color: black;
+#indexkontener {
+   background-color: #c0c0c0;
+   box-shadow: 0px 8px 10px 0px gray;
+   width: 1000px;
+   height: 90px;
+   margin-top: 20px;
+   padding: 0 8px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   align-content: space-around;  
 }
-.Szoveg h3 {
-  font-weight: bold;
-  font-size: 28px;
-  margin: 30px 0 5px 0;
+.thumbdiv {
+   position: relative;
+   width: 72px;
+   height: 72px;
 }
-.Kisszoveg {
-  font-size: 18px;
-  color: black;
-  margin-bottom: 40px;
+.thumbn {
+   position: absolute;
+   width: 66px;
+   height: 66px;
+   border: 3px solid #eeeeee;
+   border-radius: 8px;
+   box-shadow: 0px 8px 5px 0px #666666;
 }
-.Szoveg h4 {
-  font-style: italic;
-  font-weight: 300;
-  font-size: 19px;
-  margin: 5px 0;
+.thumbcim {
+   background-color: gray;
+   border: 1px solid darkgray;
+   border-radius: 5px;
+   height: 22px;
+   padding: 0 10px;
+   color : cyan;
+   font-family: 'Baloo Tamma 2', cursive;
+   font-size: 16px;
+   text-align: center;
+   overflow: hidden;
+   white-space: nowrap;
+   position: absolute;
+   top: -25px;
+   left: -30%;
+   display: none;
 }
-.Lista2 {
-  list-style-type: square;
-  font-size: 18px;
-  margin: 0 0 50px 0;
-}
-.Lista2 li {
-  margin: 10px 0; 
-}
-.Szoveg hr {
-  Height: 4px;
-  background-color: black;
-  border: 0;
-  margin-bottom: 50px;
+.thumbdiv:hover .thumbcim {
+   display: block;
 }
